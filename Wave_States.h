@@ -11,6 +11,10 @@ struct Wave_State
 	Eigen::MatrixXd Orthonormal_Transformation;
 };
 
-Wave_State Hexagon5(double Scale_Distance, int Num_Layers);
+Wave_State HexagonX(int Num_Layers, bool noise_flag = false);
 
-Wave_State Hexagon5(double Scale_Distance);
+Wave_State HexagonX(int Num_Layers, double Scale_Distance, bool noise_flag = false);
+
+Wave_State Hexagon5(double Scale_Distance, bool noise_flag = false);
+
+Wave_State Hexagon5(bool noise_flag = false);

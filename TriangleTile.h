@@ -4,6 +4,7 @@
 #define TRIANGLETILE_H
 #endif // !1
 #include "Eigen/Dense"
+#include "time.h"
 
 class TriangleTile
 {
@@ -17,8 +18,8 @@ public:
 	double** positions;
 	int Num_Points;
 	int Num_Layers;
-	TriangleTile(int num_layers);
-	TriangleTile();
+	TriangleTile(int num_layers, bool noise_flag = false);
+	TriangleTile(bool noise_flag = false);
 	~TriangleTile();
 };
 
